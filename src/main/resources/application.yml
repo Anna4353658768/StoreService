@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/goods
+    username: postgres
+    password: 2563
+ 
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  main:
+    allow-bean-definition-overriding: true
+
+  test:
+    database:
+      replace: none
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+ 
+ 
+ 
+ 
+ 
+ 
+ 
