@@ -18,7 +18,7 @@ import com.example.demo.service.ManufacturerService;
 @RestController
 @RequestMapping(value="v1/manufacturers")
 public class ManufacturerController {
-	
+
 	@Autowired
 	private ManufacturerService manufacturerService;
 
